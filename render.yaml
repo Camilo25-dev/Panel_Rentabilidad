@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sura-investments-dashboard
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Pagina:server --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: HOST
+        value: "0.0.0.0"
