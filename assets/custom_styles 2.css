@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'SuraSans-Regular';
+    src: url('./SuraSans-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SuraSans-SemiBold';
+    src: url('./SuraSans-SemiBold.otf') format('opentype');
+    font-weight: 600;
+}
+
+/* Aplicar fuente por defecto */
+body, .dash-app {
+    font-family: 'SuraSans-Regular', Arial, sans-serif;
+}
+
+/* Para títulos */
+h1, h2, h3, h4, h5, h6, .titulo {
+    font-family: 'SuraSans-SemiBold', Arial, sans-serif;
+}
